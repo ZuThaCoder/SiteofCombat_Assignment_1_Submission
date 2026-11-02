@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site of Combat</title>
+    <link rel="icon" type="image/x-icon" href="images/Profile.jfif">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="gamesite_styles.css">
+    <script src="gamesite.js"></script>
+
+    <style>
+
+    </style>
+</head>
+<body>
+   
+   
+   
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand logo" href="#">Site of Combat</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="events.html">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registration.html">Register</a>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <input type="text" id="txtSearch" class="search">
+      <img src="images/search-icon.png" alt="" style="width: 15px;">
+    </div>
+  </div>
+</nav>
+   </header>
+
+   <div class="burger-icon" id="burger" onclick="bcheck()">
+    &#9776;
+  </div>
+
+   <nav class="mobile-menu" id="mobile-menu">
+      <ul class="nav-links">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="events.html">Events</a></li>
+         <li><a href="registration.html">Register</a></li>
+         <li><a href="#contact">Socials</a></li>
+      </ul>
+   </nav>
+
+   <br>
+   <h1> EVENTS</h1>
+   <br>
+   <div class="info-container hidden" id="eventMaker" style="gap: 10px; padding-right: 30px;">
+      <div class="aligned-form">
+   
+        <label for="eventHost">Host Name:</label>
+        <input type="text" id="eventHost" name="eventHost" placeholder="Enter Host name">
+        
+
+         <label for="eventImage">Event Image:</label>
+        <input type="file" id="eventImage" name="eventImage" accept="image/*">
+   
+
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" placeholder="Enter event name">
+    
+
+        <label for="eventDescription">Event Description:</label>
+        <textarea style="resize: none;" id="eventDescription" name="eventDescription" placeholder="Enter event description"></textarea>
+    
+
+    
+        <label for="eventPrize">Event Prize:</label>
+        <input type="text" id="eventPrize" name="eventPrize" placeholder="Enter event prize">
+    
+
+    
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate">
+
+    
+        <button type="button" onclick="addNewEvent()">Create Event</button>
+        
+    </div>
+   </div>
+
+
+<br>
+    <button class="action-btn" id="eventShow" onclick="hide()">Make an Event</button><br><br>
+   
+   
+    <div class="events-grid" id="eventDisplay">
+      <div class="event"> 
+         <img src="images/Naruto.jpeg">
+
+         <Label class="title">
+            <h2>Title: Kage Summit</h2>
+            <h3>Date: 08/12/2026</h3>
+            <h4>Host: Tobirama</h4>
+            <hr><br>
+            <p> Only one Shinobi may stand above all others, will YOU take the crown?</p>
+            <br>
+            <p>Prize: Naruto Acrylic stand</p>
+            <p>date: 11/11/2026</p>
+         </Label>
+      </div>
+
+      <br>
+      
+      <div class="event"> 
+         <img src="images/StreetFighter.jfif">
+
+         <Label class="title">
+            <h2>Title: Streets of Rage</h2>
+            <h3>Host: Marko YTP</h3>
+            <hr><br>
+            <p> Gather all your friends and bring the out to scrap in this heated best of 3 tourney</p>
+            <br>
+            <p>Prize: T.B.A.</p>
+            <p>Date: 02/11/2026</p>
+         </Label>
+      </div>
+<br>
+      <div class="event"> 
+         <img src="images/cod.jfif">
+
+         <Label class="title">
+            <h2>Title: Ground Zero</h2>
+            <h3>Host: Commander_GRUNT</h3>
+            <hr><br>
+            <p> Open invite, limited spaces available. Apply before 3 days notice</p>
+            <br>
+            <p>Prize:$10,000 JMD</p>
+            <p>Date: 3/12/2026</p>
+         </Label>
+      </div>
+
+      
+   </div>
+   <br>
+
+
+</body>
+<footer>Welcome to the dojo</footer>
+</html>
